@@ -28,5 +28,8 @@ jint Java_dev_Main_foo(JNIEnv *env, jclass c, jobject obj) {
 	id = e.GetMethodID(env, clazz, "flush", "()V");
 	e.CallObjectMethod(env, obj, id);
 
+	void b();
+	b();
+
 	return 0;
 }

@@ -11,7 +11,7 @@ public class Main {
 	public static native int foo(Writer w);
 
 	public static void main(String[] args) {
-		System.out.println("测试开始");
+		System.out.println("测试开始" + ", 系统编码: " + new OutputStreamWriter(System.out).getEncoding());
 		Demo.test();
 		try {
 			int n = foo(new OutputStreamWriter(System.out, "UTF-8"));

@@ -10,7 +10,7 @@ bin/libdev.so: src/c/jni/*.c
 
 .PHONY: run
 run:
-	java -classpath bin dev.Main
+	LD_LIBRARY_PATH=./bin java -classpath bin dev.Main
 
 .PHONY: clean
 clean:
